@@ -36,22 +36,23 @@ export default function Navbar() {
             </div>
 
             <div
-              className={` flex flex-col px-5 absolute backdrop-blur-md bg-white/30 left-0 min-h-[20vh] w-full gap-[4vw] items-start ${
+              className={` flex flex-col px-5 absolute backdrop-blur-md bg-white/30 left-0 min-h-[20vh] w-full h-full gap-[4vw] items-start ${
                 isOpen ? "top-[9%]" : "top-[-100%]"
-              }  sm:w-auto sm:static sm:flex sm:flex-row sm:min-h-fit`}
+              }  sm:w-auto sm:static sm:flex sm:flex-row sm:min-h-fit `}
             >
               <Link href="/">Home</Link>
               <Link href="/about-us">About Us</Link>
               <Link href="/pricing">Pricing</Link>
+              <Button className="block sm:hidden"> Login</Button>
             </div>
           </div>
           <div className="sm:block hidden">
-            <Button>Login</Button>
+            <Button className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500">
+              Login
+            </Button>
           </div>
         </div>
       </div>
     </nav>
   );
 }
-
-// mx-auto max-w-7xl px-2
