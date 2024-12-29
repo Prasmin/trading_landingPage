@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import aboutuspic from "../../publci/aboutUs.jpg";
 
 import Pricing from "@/components/pricing";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -76,6 +77,11 @@ export default function Home() {
       {/* Pricing Section */}
       <section className="py-24 relative">
         <Pricing />
+      </section>
+
+      {/* footer */}
+      <section>
+        <Footer />
       </section>
     </main>
   );
