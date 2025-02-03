@@ -61,13 +61,17 @@ export default function Navbar() {
               >
                 Pricing
               </Link>
-              <Button className="block sm:hidden"> Login</Button>
+              <Link href="/login">
+                <Button className="block sm:hidden"> Login</Button>
+              </Link>
             </div>
           </div>
           <div className="sm:block hidden">
-            <Button className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500">
-              Login
-            </Button>
+            <Link href="/login">
+              <Button className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500">
+                Login
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
