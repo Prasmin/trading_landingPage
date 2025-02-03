@@ -14,18 +14,21 @@ export default function Navbar() {
     setOpen(!isOpen);
   }
   return (
-    <nav>
-      <div className="mx-auto sm:max-w-7xl  px-2 sm:px-8">
-        <div className="sm:flex sm:justify-between items-center  ">
-          <div className="flex items-center justify-between px-2 sm:space-x-4  py-2">
+    <nav className="sm:sticky sm:top-0 sm:z-50 sm:bg-white sm:shadow-md">
+      <div className="mx-auto sm:max-w-7xl  px-2 sm:px-8 ">
+        <div className="sm:flex sm:justify-between items-center ">
+          <div className="flex items-center justify-between px-2 sm:space-x-4  py-2       ">
             <div>
-              <Image
-                src={logoImg}
-                width={50}
-                height={50}
-                alt="Logo"
-                className="rounded-full"
-              />
+              <Link href="/">
+                <Image
+                  src={logoImg}
+                  width={50}
+                  height={50}
+                  alt="Logo"
+                  priority
+                  className="rounded-full"
+                />
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -40,9 +43,24 @@ export default function Navbar() {
                 isOpen ? "top-[9%]" : "top-[-100%]"
               }  sm:w-auto sm:static sm:flex sm:flex-row sm:min-h-fit `}
             >
-              <Link href="/">Home</Link>
-              <Link href="/about-us">About Us</Link>
-              <Link href="/pricing">Pricing</Link>
+              <Link
+                href="/"
+                className="hover:text-gray-500 transition duration-300"
+              >
+                Home
+              </Link>
+              <Link
+                href="/about-us"
+                className="hover:text-gray-500 transition duration-300"
+              >
+                About Us
+              </Link>
+              <Link
+                href="/pricing"
+                className="hover:text-gray-500 transition duration-300"
+              >
+                Pricing
+              </Link>
               <Button className="block sm:hidden"> Login</Button>
             </div>
           </div>

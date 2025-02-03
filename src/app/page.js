@@ -1,8 +1,9 @@
 import Image from "next/image";
-import herotradingpicremovebgpreview from "../../publci/herotradingpic-removebg-preview.png";
+import herotradingpicremovebgpreview from "../../public/herotradingpic-removebg-preview.png";
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import aboutuspic from "../../publci/aboutUs.jpg";
+import aboutuspic from "../../public/aboutUs.jpg";
 
 import Pricing from "@/components/pricing";
 import { Footer } from "@/components/footer";
