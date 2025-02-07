@@ -16,19 +16,15 @@ export default function Home() {
     <main>
       <section className="py-16 md:pt-32 md:pb-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-100 via-pink-100 to-indigo-100 bg">
         <div className="max-w-7xl mx-auto px-4  lg:px-8">
-          <div className="lg:grid lg:grid-cols-12 lg:gap-8 ">
+          <div className="lg:grid lg:grid-cols-12 lg:gap-8 relative ">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
-              <h1 className="text-4xl font-bold bg-clip-text text-transparent  bg-gradient-to-r from-indigo-500  to-orange-500 tracking-tight sm:text-5xl md:text-5xl ">
-                Trade Confidently With
+              <h1 className="text-4xl  font-bold  text-balance  tracking-normal sm:text-5xl  ">
+                Trade Smarter, Track Better, and Learn More—All in One Platform!
                 <span className="block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500  to-orange-500">
                   <RotateString />
                 </span>
               </h1>
-              <p className="mt-3 text-base text-gray-900 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Launch your SaaS product in record time with our powerful,
-                ready-to-use template. Packed with modern technologies and
-                essential integrations.
-              </p>
+
               <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                 <Link href="/registration">
                   <Button className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500">
@@ -46,7 +42,7 @@ export default function Home() {
               />
             </div>
             <div className="absolute top-0 right-0 flex justify-center items-center">
-              <div className="w-80 h-80 bg-indigo-500 rounded-full opacity-30"></div>
+              <div className="w-60 h-60 bg-indigo-500 rounded-full opacity-20"></div>
             </div>
           </div>
         </div>

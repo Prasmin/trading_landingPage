@@ -14,10 +14,10 @@ export default function Navbar() {
     setOpen(!isOpen);
   }
   return (
-    <nav className="sm:sticky sm:top-0 sm:z-50 sm:bg-white sm:shadow-md">
+    <nav className="sm:sticky sm:top-0  sm:z-50 sm:bg-white sm:shadow-md">
       <div className="mx-auto sm:max-w-7xl  px-2 sm:px-8 ">
         <div className="sm:flex sm:justify-between items-center ">
-          <div className="flex items-center justify-between px-2 sm:space-x-4  py-2       ">
+          <div className="flex items-center justify-between px-2 sm:space-x-4  py-2   ">
             <div>
               <Link href="/">
                 <Image
@@ -39,7 +39,7 @@ export default function Navbar() {
             </div>
 
             <div
-              className={` flex flex-col px-5 absolute backdrop-blur-md bg-white/30 left-0 min-h-[20vh] w-full h-full gap-[4vw] items-start ${
+              className={` flex flex-col px-5 absolute z-50 backdrop-blur-md bg-white/30 left-0 min-h-[20vh] w-full  gap-[4vw] items-start ${
                 isOpen ? "top-[9%]" : "top-[-100%]"
               }  sm:w-auto sm:static sm:flex sm:flex-row sm:min-h-fit `}
             >
