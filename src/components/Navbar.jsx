@@ -50,7 +50,7 @@ export default function Navbar() {
                 Home
               </Link>
               <Link
-                href="/about-us"
+                href="/aboutUus"
                 className="hover:text-gray-500 transition duration-300"
               >
                 About Us
