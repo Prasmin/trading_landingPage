@@ -6,10 +6,8 @@ import React from "react";
 
 export default function LoginPage() {
   return (
-    <>
-      <div>
-        <SignIn />
-      </div>
-    </>
+    <div className="h-full">
+      <SignIn />
+    </div>
   );
 }

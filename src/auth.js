@@ -10,6 +10,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   ],
 
   pages: {
-    signIn: "/auth/sign-in",
+    signIn: "/sign-in",
   },
 });
