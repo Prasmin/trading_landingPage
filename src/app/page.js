@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import aboutuspic from "../../public/aboutUs.jpg";
 
 import Pricing from "@/components/pricing";
-import { Footer } from "@/components/footer";
+
 import RotateString from "@/components/ui/rotateString";
 
 import Link from "next/link";
