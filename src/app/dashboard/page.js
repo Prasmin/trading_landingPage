@@ -14,13 +14,7 @@ export default function Dashboard() {
     <div>
       <h1>Welcome, {session?.user?.name}!</h1>
       <SignOut />
+      <p>my name is prasmin gurung</p>
     </div>
   );
 }
-
-/* <>
-      <div>This is dashboard page</div>
-      <div>
-        <SignOut />
-      </div>
-    </> */

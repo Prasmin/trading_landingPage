@@ -1,14 +1,11 @@
 import { SessionProvider } from "next-auth/react";
 import Dashboard from "@/app/dashboard/page";
 
-export default function Administrator({ children }) {
+export default function DashboardLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <SessionProvider>
-          <Dashboard />
-        </SessionProvider>
-      </body>
-    </html>
+    <SessionProvider>
+      <section>{children}</section>{" "}
+      {/* This prevents inheriting global layout */}
+    </SessionProvider>
   );
 }

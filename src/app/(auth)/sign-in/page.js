@@ -6,7 +6,7 @@ import React from "react";
 
 export default function LoginPage() {
   return (
-    <div className="h-full">
+    <div className="">
       <SignIn />
     </div>
   );
