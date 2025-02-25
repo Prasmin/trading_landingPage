@@ -10,10 +10,19 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   adapter: PostgresAdapter(pool),
-  providers: [Google],
+  providers: [
+    Google({
+      allowDangerousEmailAccountLinking: true,
+    }),
+  ],
+
+  session: {
+    strategy: "jwt",
+    maxAge: 30 * 24 * 60 * 60, // 30 days in seconds (this value is also the default)
+  },
 
   pages: {
-    signIn: "/login",
+    signIn: "/auth/sign-in",
   },
 
   secret: process.env.NEXTAUTH_SECRET,

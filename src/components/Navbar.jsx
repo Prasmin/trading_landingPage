@@ -61,13 +61,13 @@ export default function Navbar() {
               >
                 Pricing
               </Link>
-              <Link href="/sign-in">
+              <Link href="/auth/sign-in">
                 <Button className="block sm:hidden"> Login</Button>
               </Link>
             </div>
           </div>
           <div className="sm:block hidden">
-            <Link href="/sign-in">
+            <Link href="/auth/sign-in">
               <Button className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500">
                 Login
               </Button>
