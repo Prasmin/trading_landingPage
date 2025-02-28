@@ -1,5 +1,6 @@
 import Image from "next/image";
-import herotradingpicremovebgpreview from "../../public/herotradingpic-removebg-preview.png";
+
+import herotradingpicremovebgpreview from "@/public/herotradingpic-removebg-preview.png";
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";

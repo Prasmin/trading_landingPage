@@ -1,7 +1,7 @@
 "use client";
 
 import { handleEmailSignIn } from "@/lib/emailsingaction";
-import { Button } from "../../../components/ui/button";
+import { Button } from "../../../../components/ui/button";
 import { handleGoogleSignIn } from "@/lib/googlesingaction";
 import { useState, useTransition } from "react";
 

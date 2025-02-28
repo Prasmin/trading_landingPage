@@ -1,7 +1,7 @@
 // import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import { Footer } from "@/components/footer";
 
 // const geistSans = localFont({

@@ -1,4 +1,4 @@
-import SignIn from "@/app/auth/sign-in/sign-in";
+import SignIn from "@/app/(api)/auth/sign-in/sign-in";
 import { checkIsAuthenticated } from "@/lib/checkUserAuth";
 import { redirect } from "next/navigation";
 
